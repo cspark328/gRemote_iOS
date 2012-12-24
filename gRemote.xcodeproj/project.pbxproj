@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C38504D616886274007ED42F /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38504D516886274007ED42F /* GestureViewController.m */; };
+		C38504DA168862F9007ED42F /* FilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38504D9168862F9007ED42F /* FilesTableViewController.m */; };
+		C38504DE1688635F007ED42F /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38504DD1688635F007ED42F /* KeyboardViewController.m */; };
+		C38504E2168863AB007ED42F /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38504E1168863AB007ED42F /* SettingsTableViewController.m */; };
+		C38504E616886404007ED42F /* ServersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C38504E516886404007ED42F /* ServersTableViewController.m */; };
 		C3D2DEB6168583F70078266E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2DEB5168583F70078266E /* UIKit.framework */; };
 		C3D2DEB8168583F70078266E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2DEB7168583F70078266E /* Foundation.framework */; };
 		C3D2DEBA168583F70078266E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2DEB9168583F70078266E /* CoreGraphics.framework */; };
@@ -34,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C38504D416886274007ED42F /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureViewController.h; path = UI/Gesture/GestureViewController.h; sourceTree = "<group>"; };
+		C38504D516886274007ED42F /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GestureViewController.m; path = UI/Gesture/GestureViewController.m; sourceTree = "<group>"; };
+		C38504D8168862F9007ED42F /* FilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilesTableViewController.h; path = UI/Files/FilesTableViewController.h; sourceTree = "<group>"; };
+		C38504D9168862F9007ED42F /* FilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilesTableViewController.m; path = UI/Files/FilesTableViewController.m; sourceTree = "<group>"; };
+		C38504DC1688635F007ED42F /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardViewController.h; path = UI/Keyboard/KeyboardViewController.h; sourceTree = "<group>"; };
+		C38504DD1688635F007ED42F /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardViewController.m; path = UI/Keyboard/KeyboardViewController.m; sourceTree = "<group>"; };
+		C38504E0168863AB007ED42F /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = UI/Settings/SettingsTableViewController.h; sourceTree = "<group>"; };
+		C38504E1168863AB007ED42F /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = UI/Settings/SettingsTableViewController.m; sourceTree = "<group>"; };
+		C38504E416886404007ED42F /* ServersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServersTableViewController.h; path = UI/Servers/ServersTableViewController.h; sourceTree = "<group>"; };
+		C38504E516886404007ED42F /* ServersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServersTableViewController.m; path = UI/Servers/ServersTableViewController.m; sourceTree = "<group>"; };
 		C3D2DEB1168583F70078266E /* gRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D2DEB5168583F70078266E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3D2DEB7168583F70078266E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,6 +94,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C38504D216886221007ED42F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C38504D7168862D7007ED42F /* Files */,
+				C38504DB1688632A007ED42F /* Keyboard */,
+				C38504DF16886384007ED42F /* Settings */,
+				C38504E3168863E2007ED42F /* Servers */,
+				C38504D316886241007ED42F /* Gesture */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C38504D316886241007ED42F /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C38504D416886274007ED42F /* GestureViewController.h */,
+				C38504D516886274007ED42F /* GestureViewController.m */,
+			);
+			name = Gesture;
+			sourceTree = "<group>";
+		};
+		C38504D7168862D7007ED42F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C38504D8168862F9007ED42F /* FilesTableViewController.h */,
+				C38504D9168862F9007ED42F /* FilesTableViewController.m */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		C38504DB1688632A007ED42F /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C38504DC1688635F007ED42F /* KeyboardViewController.h */,
+				C38504DD1688635F007ED42F /* KeyboardViewController.m */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		C38504DF16886384007ED42F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C38504E0168863AB007ED42F /* SettingsTableViewController.h */,
+				C38504E1168863AB007ED42F /* SettingsTableViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C38504E3168863E2007ED42F /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				C38504E416886404007ED42F /* ServersTableViewController.h */,
+				C38504E516886404007ED42F /* ServersTableViewController.m */,
+			);
+			name = Servers;
+			sourceTree = "<group>";
+		};
 		C3D2DEA6168583F70078266E = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +184,7 @@
 		C3D2DEBB168583F70078266E /* gRemote */ = {
 			isa = PBXGroup;
 			children = (
+				C38504D216886221007ED42F /* UI */,
 				C3D2DEC4168583F70078266E /* AppDelegate.h */,
 				C3D2DEC5168583F70078266E /* AppDelegate.m */,
 				C3D2DEBC168583F70078266E /* Supporting Files */,
@@ -263,6 +336,11 @@
 			files = (
 				C3D2DEC2168583F70078266E /* main.m in Sources */,
 				C3D2DEC6168583F70078266E /* AppDelegate.m in Sources */,
+				C38504D616886274007ED42F /* GestureViewController.m in Sources */,
+				C38504DA168862F9007ED42F /* FilesTableViewController.m in Sources */,
+				C38504DE1688635F007ED42F /* KeyboardViewController.m in Sources */,
+				C38504E2168863AB007ED42F /* SettingsTableViewController.m in Sources */,
+				C38504E616886404007ED42F /* ServersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +509,7 @@
 				C3D2DEE6168583F80078266E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3D2DEE7168583F80078266E /* Build configuration list for PBXNativeTarget "gRemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +518,7 @@
 				C3D2DEE9168583F80078266E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
