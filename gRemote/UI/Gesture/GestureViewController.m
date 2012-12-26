@@ -11,6 +11,7 @@
 #import "FilesTableViewController.h"
 #import "SettingsTableViewController.h"
 #import "KeyboardViewController.h"
+#import "ServerHelper.h"
 
 @implementation GestureViewController
 
@@ -20,6 +21,9 @@
     if (self) {
         @autoreleasepool {
             [self.view setBackgroundColor:[UIColor grayColor]];
+            
+            ServerHelper* serverHelper = [[ServerHelper alloc] init];
+            [serverHelper searchForServices];
             
             CGSize frameSize = self.view.frame.size;
             

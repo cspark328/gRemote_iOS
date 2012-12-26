@@ -26,6 +26,7 @@
 		C3D2DED6168583F80078266E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2DEB7168583F70078266E /* Foundation.framework */; };
 		C3D2DEDE168583F80078266E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3D2DEDC168583F80078266E /* InfoPlist.strings */; };
 		C3D2DEE1168583F80078266E /* gRemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D2DEE0168583F80078266E /* gRemoteTests.m */; };
+		C3E2B87A1688665000AAA059 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E2B8791688665000AAA059 /* ServerHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C3D2DEDD168583F80078266E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3D2DEDF168583F80078266E /* gRemoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gRemoteTests.h; sourceTree = "<group>"; };
 		C3D2DEE0168583F80078266E /* gRemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gRemoteTests.m; sourceTree = "<group>"; };
+		C3E2B8781688665000AAA059 /* ServerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerHelper.h; path = Model/ServerHelper.h; sourceTree = "<group>"; };
+		C3E2B8791688665000AAA059 /* ServerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerHelper.m; path = Model/ServerHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,7 @@
 		C3D2DEBB168583F70078266E /* gRemote */ = {
 			isa = PBXGroup;
 			children = (
+				C3E2B8751688652A00AAA059 /* Model */,
 				C38504D216886221007ED42F /* UI */,
 				C3D2DEC4168583F70078266E /* AppDelegate.h */,
 				C3D2DEC5168583F70078266E /* AppDelegate.m */,
@@ -223,6 +227,15 @@
 				C3D2DEDC168583F80078266E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3E2B8751688652A00AAA059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3E2B8781688665000AAA059 /* ServerHelper.h */,
+				C3E2B8791688665000AAA059 /* ServerHelper.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +354,7 @@
 				C38504DE1688635F007ED42F /* KeyboardViewController.m in Sources */,
 				C38504E2168863AB007ED42F /* SettingsTableViewController.m in Sources */,
 				C38504E616886404007ED42F /* ServersTableViewController.m in Sources */,
+				C3E2B87A1688665000AAA059 /* ServerHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
